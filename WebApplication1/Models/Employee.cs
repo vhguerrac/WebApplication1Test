@@ -15,7 +15,8 @@ namespace WebApplication1.Models
         public int RoleId { get; set; }
         public string RoleName { get; set; }
         public string RoleDescription { get; set; }
-        public decimal HourSalary { get; set; }
-        public decimal MonthlySalry { get; set; }
+        public decimal HourlySalary { get; set; }
+        public decimal MonthlySalary { get; set; }
+        public decimal Salary { get; set; }
     }
 }

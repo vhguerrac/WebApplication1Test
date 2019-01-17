@@ -1,0 +1,82 @@
+﻿@model WebApplication1.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContractTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContractTypeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoleId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoleId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoleName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoleName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RoleDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RoleDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HourlySalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HourlySalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonthlySalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonthlySalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salary)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

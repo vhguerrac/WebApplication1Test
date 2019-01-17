@@ -27,10 +27,13 @@
             @Html.DisplayNameFor(model => model.RoleDescription)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.HourSalary)
+            @Html.DisplayNameFor(model => model.HourlySalary)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.MonthlySalry)
+            @Html.DisplayNameFor(model => model.MonthlySalary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
         </th>
         <th></th>
     </tr>
@@ -53,10 +56,13 @@
             @Html.DisplayFor(modelItem => item.RoleDescription)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.HourSalary)
+            @Html.DisplayFor(modelItem => item.HourlySalary)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.MonthlySalry)
+            @Html.DisplayFor(modelItem => item.MonthlySalary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salary)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
